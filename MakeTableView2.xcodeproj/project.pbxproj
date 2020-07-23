@@ -3,19 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8C5922DCD16A807FD481AAE /* Pods_MakeTableView2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A4FA8374746E0F8BFAC618 /* Pods_MakeTableView2.framework */; };
+		D1198A2824C942E4007072AB /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2524C942E4007072AB /* APIKit.framework */; };
+		D1198A2924C942E4007072AB /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2524C942E4007072AB /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1198A2A24C942E4007072AB /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2624C942E4007072AB /* Kingfisher.framework */; };
+		D1198A2B24C942E4007072AB /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2624C942E4007072AB /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1198A2C24C942E4007072AB /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2724C942E4007072AB /* BrightFutures.framework */; };
+		D1198A2D24C942E4007072AB /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2724C942E4007072AB /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1AF42F524C93E530010ECC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF42F424C93E530010ECC5 /* AppDelegate.swift */; };
 		D1AF42F724C93E530010ECC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF42F624C93E530010ECC5 /* SceneDelegate.swift */; };
 		D1AF42F924C93E530010ECC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF42F824C93E530010ECC5 /* ViewController.swift */; };
 		D1AF42FC24C93E530010ECC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AF42FA24C93E530010ECC5 /* Main.storyboard */; };
 		D1AF42FE24C93E590010ECC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1AF42FD24C93E590010ECC5 /* Assets.xcassets */; };
 		D1AF430124C93E590010ECC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AF42FF24C93E590010ECC5 /* LaunchScreen.storyboard */; };
+		D1AF430924C9401A0010ECC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1AF430824C9401A0010ECC5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D1198A2E24C942E4007072AB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1198A2D24C942E4007072AB /* BrightFutures.framework in Embed Frameworks */,
+				D1198A2B24C942E4007072AB /* Kingfisher.framework in Embed Frameworks */,
+				D1198A2924C942E4007072AB /* APIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		542F1B237A2592E74F0CF4FC /* Pods-MakeTableView2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeTableView2.debug.xcconfig"; path = "Target Support Files/Pods-MakeTableView2/Pods-MakeTableView2.debug.xcconfig"; sourceTree = "<group>"; };
+		68A4FA8374746E0F8BFAC618 /* Pods_MakeTableView2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakeTableView2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90336C935FDCD40D6DFD16B2 /* Pods-MakeTableView2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeTableView2.release.xcconfig"; path = "Target Support Files/Pods-MakeTableView2/Pods-MakeTableView2.release.xcconfig"; sourceTree = "<group>"; };
+		D1198A2524C942E4007072AB /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		D1198A2624C942E4007072AB /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		D1198A2724C942E4007072AB /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
 		D1AF42F124C93E530010ECC5 /* MakeTableView2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeTableView2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AF42F424C93E530010ECC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1AF42F624C93E530010ECC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +54,7 @@
 		D1AF42FD24C93E590010ECC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1AF430024C93E590010ECC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1AF430224C93E590010ECC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AF430824C9401A0010ECC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +62,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1198A2824C942E4007072AB /* APIKit.framework in Frameworks */,
+				D1198A2C24C942E4007072AB /* BrightFutures.framework in Frameworks */,
+				D1198A2A24C942E4007072AB /* Kingfisher.framework in Frameworks */,
+				C8C5922DCD16A807FD481AAE /* Pods_MakeTableView2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1717BE9607273E8B7ADB995 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				542F1B237A2592E74F0CF4FC /* Pods-MakeTableView2.debug.xcconfig */,
+				90336C935FDCD40D6DFD16B2 /* Pods-MakeTableView2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C81CADAABCB74EDCBA9F88B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1198A2524C942E4007072AB /* APIKit.framework */,
+				D1198A2724C942E4007072AB /* BrightFutures.framework */,
+				D1198A2624C942E4007072AB /* Kingfisher.framework */,
+				68A4FA8374746E0F8BFAC618 /* Pods_MakeTableView2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1AF42E824C93E530010ECC5 = {
 			isa = PBXGroup;
 			children = (
 				D1AF42F324C93E530010ECC5 /* MakeTableView2 */,
 				D1AF42F224C93E530010ECC5 /* Products */,
+				B1717BE9607273E8B7ADB995 /* Pods */,
+				C81CADAABCB74EDCBA9F88B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +120,7 @@
 				D1AF42FD24C93E590010ECC5 /* Assets.xcassets */,
 				D1AF42FF24C93E590010ECC5 /* LaunchScreen.storyboard */,
 				D1AF430224C93E590010ECC5 /* Info.plist */,
+				D1AF430824C9401A0010ECC5 /* GoogleService-Info.plist */,
 			);
 			path = MakeTableView2;
 			sourceTree = "<group>";
@@ -74,9 +132,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1AF430524C93E590010ECC5 /* Build configuration list for PBXNativeTarget "MakeTableView2" */;
 			buildPhases = (
+				17DF9F90C292A611F3DB6A19 /* [CP] Check Pods Manifest.lock */,
 				D1AF42ED24C93E530010ECC5 /* Sources */,
 				D1AF42EE24C93E530010ECC5 /* Frameworks */,
 				D1AF42EF24C93E530010ECC5 /* Resources */,
+				B474838BDCF8152CEEE80E9B /* [CP] Embed Pods Frameworks */,
+				D1198A2E24C942E4007072AB /* Embed Frameworks */,
+				D1198A2F24C942F6007072AB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -126,12 +188,75 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1AF430124C93E590010ECC5 /* LaunchScreen.storyboard in Resources */,
+				D1AF430924C9401A0010ECC5 /* GoogleService-Info.plist in Resources */,
 				D1AF42FE24C93E590010ECC5 /* Assets.xcassets in Resources */,
 				D1AF42FC24C93E530010ECC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17DF9F90C292A611F3DB6A19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MakeTableView2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B474838BDCF8152CEEE80E9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MakeTableView2/Pods-MakeTableView2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MakeTableView2/Pods-MakeTableView2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MakeTableView2/Pods-MakeTableView2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1198A2F24C942F6007072AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.frameworks",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.frameworks",
+				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.frameworks",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1AF42ED24C93E530010ECC5 /* Sources */ = {
@@ -282,10 +407,15 @@
 		};
 		D1AF430624C93E590010ECC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 542F1B237A2592E74F0CF4FC /* Pods-MakeTableView2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q7A759C5Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MakeTableView2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,10 +430,15 @@
 		};
 		D1AF430724C93E590010ECC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90336C935FDCD40D6DFD16B2 /* Pods-MakeTableView2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q7A759C5Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MakeTableView2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
