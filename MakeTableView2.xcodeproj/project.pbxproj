@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C8C5922DCD16A807FD481AAE /* Pods_MakeTableView2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A4FA8374746E0F8BFAC618 /* Pods_MakeTableView2.framework */; };
-		D1198A2824C942E4007072AB /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2524C942E4007072AB /* APIKit.framework */; };
-		D1198A2924C942E4007072AB /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2524C942E4007072AB /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D1198A2A24C942E4007072AB /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2624C942E4007072AB /* Kingfisher.framework */; };
-		D1198A2B24C942E4007072AB /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2624C942E4007072AB /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D1198A2C24C942E4007072AB /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2724C942E4007072AB /* BrightFutures.framework */; };
-		D1198A2D24C942E4007072AB /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2724C942E4007072AB /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1198A3124C94852007072AB /* Next.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1198A3024C94852007072AB /* Next.storyboard */; };
+		D1198A3324C9486C007072AB /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198A3224C9486C007072AB /* NextViewController.swift */; };
+		D1198A3524C955C5007072AB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A3424C955C5007072AB /* WebKit.framework */; };
+		D1198A3B24C9572D007072AB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198A3924C9572D007072AB /* CustomTableViewCell.swift */; };
+		D1198A3C24C9572D007072AB /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1198A3A24C9572D007072AB /* CustomTableViewCell.xib */; };
 		D1AF42F524C93E530010ECC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF42F424C93E530010ECC5 /* AppDelegate.swift */; };
 		D1AF42F724C93E530010ECC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF42F624C93E530010ECC5 /* SceneDelegate.swift */; };
 		D1AF42F924C93E530010ECC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF42F824C93E530010ECC5 /* ViewController.swift */; };
@@ -23,22 +22,6 @@
 		D1AF430924C9401A0010ECC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1AF430824C9401A0010ECC5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		D1198A2E24C942E4007072AB /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D1198A2D24C942E4007072AB /* BrightFutures.framework in Embed Frameworks */,
-				D1198A2B24C942E4007072AB /* Kingfisher.framework in Embed Frameworks */,
-				D1198A2924C942E4007072AB /* APIKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		542F1B237A2592E74F0CF4FC /* Pods-MakeTableView2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeTableView2.debug.xcconfig"; path = "Target Support Files/Pods-MakeTableView2/Pods-MakeTableView2.debug.xcconfig"; sourceTree = "<group>"; };
 		68A4FA8374746E0F8BFAC618 /* Pods_MakeTableView2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakeTableView2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +29,11 @@
 		D1198A2524C942E4007072AB /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		D1198A2624C942E4007072AB /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		D1198A2724C942E4007072AB /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		D1198A3024C94852007072AB /* Next.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Next.storyboard; sourceTree = "<group>"; };
+		D1198A3224C9486C007072AB /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		D1198A3424C955C5007072AB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		D1198A3924C9572D007072AB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		D1198A3A24C9572D007072AB /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		D1AF42F124C93E530010ECC5 /* MakeTableView2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeTableView2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AF42F424C93E530010ECC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1AF42F624C93E530010ECC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,9 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1198A2824C942E4007072AB /* APIKit.framework in Frameworks */,
-				D1198A2C24C942E4007072AB /* BrightFutures.framework in Frameworks */,
-				D1198A2A24C942E4007072AB /* Kingfisher.framework in Frameworks */,
+				D1198A3524C955C5007072AB /* WebKit.framework in Frameworks */,
 				C8C5922DCD16A807FD481AAE /* Pods_MakeTableView2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,12 +70,22 @@
 		C81CADAABCB74EDCBA9F88B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1198A3424C955C5007072AB /* WebKit.framework */,
 				D1198A2524C942E4007072AB /* APIKit.framework */,
 				D1198A2724C942E4007072AB /* BrightFutures.framework */,
 				D1198A2624C942E4007072AB /* Kingfisher.framework */,
 				68A4FA8374746E0F8BFAC618 /* Pods_MakeTableView2.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1198A3624C956BF007072AB /* CustomTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D1198A3924C9572D007072AB /* CustomTableViewCell.swift */,
+				D1198A3A24C9572D007072AB /* CustomTableViewCell.xib */,
+			);
+			path = CustomTableViewCell;
 			sourceTree = "<group>";
 		};
 		D1AF42E824C93E530010ECC5 = {
@@ -113,12 +109,15 @@
 		D1AF42F324C93E530010ECC5 /* MakeTableView2 */ = {
 			isa = PBXGroup;
 			children = (
+				D1198A3624C956BF007072AB /* CustomTableViewCell */,
 				D1AF42F424C93E530010ECC5 /* AppDelegate.swift */,
 				D1AF42F624C93E530010ECC5 /* SceneDelegate.swift */,
 				D1AF42F824C93E530010ECC5 /* ViewController.swift */,
 				D1AF42FA24C93E530010ECC5 /* Main.storyboard */,
 				D1AF42FD24C93E590010ECC5 /* Assets.xcassets */,
 				D1AF42FF24C93E590010ECC5 /* LaunchScreen.storyboard */,
+				D1198A3024C94852007072AB /* Next.storyboard */,
+				D1198A3224C9486C007072AB /* NextViewController.swift */,
 				D1AF430224C93E590010ECC5 /* Info.plist */,
 				D1AF430824C9401A0010ECC5 /* GoogleService-Info.plist */,
 			);
@@ -137,7 +136,6 @@
 				D1AF42EE24C93E530010ECC5 /* Frameworks */,
 				D1AF42EF24C93E530010ECC5 /* Resources */,
 				B474838BDCF8152CEEE80E9B /* [CP] Embed Pods Frameworks */,
-				D1198A2E24C942E4007072AB /* Embed Frameworks */,
 				D1198A2F24C942F6007072AB /* ShellScript */,
 			);
 			buildRules = (
@@ -189,7 +187,9 @@
 			files = (
 				D1AF430124C93E590010ECC5 /* LaunchScreen.storyboard in Resources */,
 				D1AF430924C9401A0010ECC5 /* GoogleService-Info.plist in Resources */,
+				D1198A3C24C9572D007072AB /* CustomTableViewCell.xib in Resources */,
 				D1AF42FE24C93E590010ECC5 /* Assets.xcassets in Resources */,
+				D1198A3124C94852007072AB /* Next.storyboard in Resources */,
 				D1AF42FC24C93E530010ECC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,9 +244,6 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/APIKit.frameworks",
-				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.frameworks",
-				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.frameworks",
 			);
 			outputFileListPaths = (
 			);
@@ -254,7 +251,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path./usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -264,6 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1AF42F924C93E530010ECC5 /* ViewController.swift in Sources */,
+				D1198A3B24C9572D007072AB /* CustomTableViewCell.swift in Sources */,
+				D1198A3324C9486C007072AB /* NextViewController.swift in Sources */,
 				D1AF42F524C93E530010ECC5 /* AppDelegate.swift in Sources */,
 				D1AF42F724C93E530010ECC5 /* SceneDelegate.swift in Sources */,
 			);
