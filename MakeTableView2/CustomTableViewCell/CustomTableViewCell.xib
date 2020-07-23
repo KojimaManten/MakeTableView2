@@ -16,30 +16,29 @@
                 <rect key="frame" x="0.0" y="0.0" width="345" height="136"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zu-Tw-GVs">
-                        <rect key="frame" x="145" y="11" width="200" height="114"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zu-Tw-GVs">
+                        <rect key="frame" x="134" y="11" width="191" height="114"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9XM-hQ-CIT">
-                        <rect key="frame" x="0.0" y="0.0" width="125" height="136"/>
+                        <rect key="frame" x="8" y="8" width="118" height="120"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="125" id="cay-pL-XG8"/>
+                            <constraint firstAttribute="width" constant="118" id="psd-Dq-hvl"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="9XM-hQ-CIT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3ZX-rD-OPT"/>
-                    <constraint firstItem="4zu-Tw-GVs" firstAttribute="leading" secondItem="9XM-hQ-CIT" secondAttribute="trailing" id="97c-2y-zGi"/>
-                    <constraint firstItem="4zu-Tw-GVs" firstAttribute="leading" secondItem="9XM-hQ-CIT" secondAttribute="trailing" id="BMS-33-9WZ"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="4zu-Tw-GVs" secondAttribute="bottom" id="DAH-mw-K9l"/>
-                    <constraint firstItem="4zu-Tw-GVs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Hxm-bR-zHt"/>
-                    <constraint firstItem="9XM-hQ-CIT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="J76-7j-YMc"/>
-                    <constraint firstAttribute="bottom" secondItem="9XM-hQ-CIT" secondAttribute="bottom" id="UFM-tb-y5O"/>
-                    <constraint firstItem="9XM-hQ-CIT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rFE-l1-6o7"/>
-                    <constraint firstItem="4zu-Tw-GVs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wfc-8S-MxH"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="4zu-Tw-GVs" secondAttribute="trailing" id="xC6-nJ-PH4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4zu-Tw-GVs" secondAttribute="trailing" id="3tQ-Ne-eOd"/>
+                    <constraint firstItem="4zu-Tw-GVs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JiL-aO-i1g"/>
+                    <constraint firstItem="4zu-Tw-GVs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Uiz-uJ-Xgx"/>
+                    <constraint firstItem="9XM-hQ-CIT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="V3Y-gI-7py"/>
+                    <constraint firstAttribute="bottom" secondItem="9XM-hQ-CIT" secondAttribute="bottom" constant="8" id="Xrt-Dz-j9w"/>
+                    <constraint firstItem="4zu-Tw-GVs" firstAttribute="leading" secondItem="9XM-hQ-CIT" secondAttribute="trailing" constant="8" id="hrn-FF-peQ"/>
+                    <constraint firstItem="9XM-hQ-CIT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="jF0-wX-5mv"/>
+                    <constraint firstItem="9XM-hQ-CIT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rC9-5t-0fB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4zu-Tw-GVs" secondAttribute="bottom" id="uwE-rA-DKc"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -47,7 +46,7 @@
                 <outlet property="customLabel" destination="4zu-Tw-GVs" id="dbH-L5-HMZ"/>
                 <outlet property="customView" destination="9XM-hQ-CIT" id="F05-Wc-8wg"/>
             </connections>
-            <point key="canvasLocation" x="71.739130434782609" y="68.303571428571431"/>
+            <point key="canvasLocation" x="37" y="29"/>
         </tableViewCell>
     </objects>
 </document>

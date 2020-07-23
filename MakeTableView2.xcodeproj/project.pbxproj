@@ -13,6 +13,16 @@
 		D1198A3524C955C5007072AB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A3424C955C5007072AB /* WebKit.framework */; };
 		D1198A3B24C9572D007072AB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198A3924C9572D007072AB /* CustomTableViewCell.swift */; };
 		D1198A3C24C9572D007072AB /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1198A3A24C9572D007072AB /* CustomTableViewCell.xib */; };
+		D1198A5024C95E7F007072AB /* FetchiQiitaArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198A4F24C95E7F007072AB /* FetchiQiitaArticleRequest.swift */; };
+		D1198A5224C95E92007072AB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198A5124C95E92007072AB /* Article.swift */; };
+		D1198A5424C95EA7007072AB /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198A5324C95EA7007072AB /* QiitaAPI.swift */; };
+		D1198A5624C95EC0007072AB /* DecodableDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198A5524C95EC0007072AB /* DecodableDataParser.swift */; };
+		D1198A5724C95EDF007072AB /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2524C942E4007072AB /* APIKit.framework */; };
+		D1198A5824C95EDF007072AB /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2524C942E4007072AB /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1198A5924C95EDF007072AB /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2724C942E4007072AB /* BrightFutures.framework */; };
+		D1198A5A24C95EDF007072AB /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2724C942E4007072AB /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1198A5B24C95EDF007072AB /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2624C942E4007072AB /* Kingfisher.framework */; };
+		D1198A5C24C95EDF007072AB /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1198A2624C942E4007072AB /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1AF42F524C93E530010ECC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF42F424C93E530010ECC5 /* AppDelegate.swift */; };
 		D1AF42F724C93E530010ECC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF42F624C93E530010ECC5 /* SceneDelegate.swift */; };
 		D1AF42F924C93E530010ECC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF42F824C93E530010ECC5 /* ViewController.swift */; };
@@ -21,6 +31,22 @@
 		D1AF430124C93E590010ECC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AF42FF24C93E590010ECC5 /* LaunchScreen.storyboard */; };
 		D1AF430924C9401A0010ECC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1AF430824C9401A0010ECC5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D1198A5D24C95EDF007072AB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1198A5824C95EDF007072AB /* APIKit.framework in Embed Frameworks */,
+				D1198A5C24C95EDF007072AB /* Kingfisher.framework in Embed Frameworks */,
+				D1198A5A24C95EDF007072AB /* BrightFutures.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		542F1B237A2592E74F0CF4FC /* Pods-MakeTableView2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeTableView2.debug.xcconfig"; path = "Target Support Files/Pods-MakeTableView2/Pods-MakeTableView2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -34,6 +60,10 @@
 		D1198A3424C955C5007072AB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		D1198A3924C9572D007072AB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D1198A3A24C9572D007072AB /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		D1198A4F24C95E7F007072AB /* FetchiQiitaArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchiQiitaArticleRequest.swift; sourceTree = "<group>"; };
+		D1198A5124C95E92007072AB /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		D1198A5324C95EA7007072AB /* QiitaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
+		D1198A5524C95EC0007072AB /* DecodableDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDataParser.swift; sourceTree = "<group>"; };
 		D1AF42F124C93E530010ECC5 /* MakeTableView2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeTableView2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AF42F424C93E530010ECC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1AF42F624C93E530010ECC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1198A5B24C95EDF007072AB /* Kingfisher.framework in Frameworks */,
+				D1198A5724C95EDF007072AB /* APIKit.framework in Frameworks */,
+				D1198A5924C95EDF007072AB /* BrightFutures.framework in Frameworks */,
 				D1198A3524C955C5007072AB /* WebKit.framework in Frameworks */,
 				C8C5922DCD16A807FD481AAE /* Pods_MakeTableView2.framework in Frameworks */,
 			);
@@ -88,6 +121,49 @@
 			path = CustomTableViewCell;
 			sourceTree = "<group>";
 		};
+		D1198A4A24C95E21007072AB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D1198A4E24C95E60007072AB /* Units */,
+				D1198A4D24C95E4C007072AB /* Protocols */,
+				D1198A4C24C95E44007072AB /* Model */,
+				D1198A4B24C95E2F007072AB /* QiitaRequest */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D1198A4B24C95E2F007072AB /* QiitaRequest */ = {
+			isa = PBXGroup;
+			children = (
+				D1198A4F24C95E7F007072AB /* FetchiQiitaArticleRequest.swift */,
+			);
+			path = QiitaRequest;
+			sourceTree = "<group>";
+		};
+		D1198A4C24C95E44007072AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D1198A5124C95E92007072AB /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1198A4D24C95E4C007072AB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D1198A5324C95EA7007072AB /* QiitaAPI.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D1198A4E24C95E60007072AB /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				D1198A5524C95EC0007072AB /* DecodableDataParser.swift */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
 		D1AF42E824C93E530010ECC5 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +185,7 @@
 		D1AF42F324C93E530010ECC5 /* MakeTableView2 */ = {
 			isa = PBXGroup;
 			children = (
+				D1198A4A24C95E21007072AB /* API */,
 				D1198A3624C956BF007072AB /* CustomTableViewCell */,
 				D1AF42F424C93E530010ECC5 /* AppDelegate.swift */,
 				D1AF42F624C93E530010ECC5 /* SceneDelegate.swift */,
@@ -137,6 +214,7 @@
 				D1AF42EF24C93E530010ECC5 /* Resources */,
 				B474838BDCF8152CEEE80E9B /* [CP] Embed Pods Frameworks */,
 				D1198A2F24C942F6007072AB /* ShellScript */,
+				D1198A5D24C95EDF007072AB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +322,9 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -251,7 +332,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path./usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path./usr/local/bin/carthage copy-frameworks\n/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -260,8 +341,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1198A5224C95E92007072AB /* Article.swift in Sources */,
+				D1198A5024C95E7F007072AB /* FetchiQiitaArticleRequest.swift in Sources */,
 				D1AF42F924C93E530010ECC5 /* ViewController.swift in Sources */,
+				D1198A5424C95EA7007072AB /* QiitaAPI.swift in Sources */,
 				D1198A3B24C9572D007072AB /* CustomTableViewCell.swift in Sources */,
+				D1198A5624C95EC0007072AB /* DecodableDataParser.swift in Sources */,
 				D1198A3324C9486C007072AB /* NextViewController.swift in Sources */,
 				D1AF42F524C93E530010ECC5 /* AppDelegate.swift in Sources */,
 				D1AF42F724C93E530010ECC5 /* SceneDelegate.swift in Sources */,

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import APIKit
+import Kingfisher
 
 class ViewController: UIViewController {
 
@@ -22,6 +24,26 @@ class ViewController: UIViewController {
         //registerでカスタムセルの登録
         let nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "CustomTableViewCell")
+        
+        //リクエスト送信
+        sendRequest()
+    }
+    //[Articles]のインスタンス化
+    var articles: [Articles]?
+    //リクエストの定義
+    private func sendRequest() {
+        let request = FetchiQiitaArticleRequest(baseURL: URL(string: "https://qiita.com/api/v2")!)
+        
+        Session.send(request) { result in
+            switch result {
+            case .success(let response):
+                self.articles = response
+                self.tableView.reloadData()
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 
 
@@ -29,13 +51,17 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        guard let articles = articles else { return 0 }
+        return articles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //カスタムセルの登録
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
-        cell.customLabel.text = "俺にはできる！俺にはできる！俺には俺がついている！！"
+        if let articles = articles {
+            cell.customLabel.text = articles[indexPath.row].title
+            cell.customView.kf.setImage(with: URL(string: articles[indexPath.row].user.profile_image_url))
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -44,7 +70,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         //遷移先のビューコントローラーをインスタンス化
         guard let nextViewController = storyboard.instantiateInitialViewController() as? NextViewController else { return }
         //画面遷移時に値を渡す
-        nextViewController.urlStr = "https://www.youtube.com/watch?v=B_TFakdr0lo&list=RDB_TFakdr0lo&start_radio=1"
+        if let articles = articles {
+            nextViewController.urlStr = articles[indexPath.row].url
+        }
         //画面遷移実行
         navigationController?.pushViewController(nextViewController, animated: true)
     }
