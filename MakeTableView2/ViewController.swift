@@ -14,6 +14,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBAction func gestureRecognizer(_ sender: Any) {
+        self.view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,7 +94,7 @@ extension ViewController: UISearchBarDelegate {
         var newArray: [Articles] = []
         if articles != nil {
             articles?.forEach({
-                if $0.title.contains(text) {
+                if $0.title.lowercased().contains(text) {
                     newArray.insert($0, at: 0)
                 } else {
                     newArray.append($0)
@@ -99,6 +102,7 @@ extension ViewController: UISearchBarDelegate {
             })
             articles = newArray
             tableView.reloadData()
+            searchBar.endEditing(true)
         }
     }
 }

@@ -38,6 +38,7 @@
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="nZi-DG-tfs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="58N-vd-ovt"/>
                             <constraint firstItem="nZi-DG-tfs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IjW-ze-Qth"/>
@@ -49,6 +50,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Osu-a8-LY6" secondAttribute="trailing" id="vrt-Wu-f4s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="oPa-9Y-ycH" appends="YES" id="jDH-9R-0P2"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="IYd-FW-dcg"/>
                     <connections>
@@ -57,6 +61,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="oPa-9Y-ycH">
+                    <connections>
+                        <action selector="gestureRecognizer:" destination="BYZ-38-t0r" id="VV5-5c-64v"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
         </scene>
